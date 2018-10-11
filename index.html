@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mars Rover</title>
+  <script src="javascripts/app.js"></script>
+  <style>
+  <style>
+  .relative{
+    max-width:100%;
+    height:auto;
+    background-color:red;
+    text-align: center
+  }
+  .absolute {
+    position: absolute;
+    border-radius: 31px;
+    padding: 15px;
+    width: 550px;
+    height: auto;
+    background-color: #0081b5;
+    margin: 0 auto;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+    text-align: left;
+}
+  p{
+    padding-left:20px;
+    padding-right: 20px;
+    color:white;
+    font-family: sans-serif;
+  }
+  #failcommand{
+    color:red;
+  }
+  .whitelight{
+    color:#ffffffbd;
+  }
+  </style>
+
+
+  </style>
+</head>
+
+<body style="background-color:#0099cc;">
+  <div style="text-align:center;margin:0 auto;height:100%;margin-top:25vh;">
+    <img id="roverimg" src="imgrovernorth.jpg"></img>
+    <h1 style="font-family:sans-serif;font-weight:900;color:white;">PLAY WITH ROVER</h1>
+  </div>
+  <div class="relative">
+  <div class="absolute">
+    <p style="text-align:center;font-style:italic;"> * Open your console and start writting functions!</p>
+<p > <b>The rover position is:</b> [<span id="positionx" class="whitelight">0</span>, <span id="positiony" class="whitelight">0</span>]</p>
+<p > <b>The rover travell log is :</b> <span id="travelloghtml" class="whitelight">You haven't made any movement</span></p>
+<p> <b>Your last instructions were:</b> <span id="commands" class="whitelight"></span></p>
+<p id="failcommand" > </p>
+<p id="failcommand1" > </p>
+
+</div>
+</div>
+</body>
+
+</html>
